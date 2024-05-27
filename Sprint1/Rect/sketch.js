@@ -38,15 +38,18 @@ function draw() {
     let breite = sin(noise((i / 40 + frameCount / -180) + 1) - noise((i / 40 + frameCount / 500) + 1)) * 7;
     let hoehe = noise((breite * 2 + frameCount / 200) + 1) * 6;
 
-    let mischWert = map(i, 0, width, 0, 1);
+    let mischWert = map(i, 0, -breite, -2, 1*2);
+    //let mischWert = map(i, 0, breite-2, -2, 1*2);
+
     let colorC = lerpColor(colorA, colorB, mischWert);
     fill(colorC);
 
     //rect(xpos, ypos, xpos + gridX, breite+5);
-   // rect(xpos, ypos,breite*15, breite+5);
-    // rect(xpos, ypos,breite*13,sin((breite*5+ frameCount / 180)+1)*13);
-    rect(xpos+hoehe, ypos+hoehe, breite * 13, breite + hoehe);
+    rect(xpos, ypos,breite*15, breite+5);
+    //rect(xpos, ypos,breite*13,sin((breite*5+ frameCount / 180)+1)*13);
+   //rect(xpos+hoehe, ypos+hoehe, breite * 13, breite + hoehe);
     //rect(xpos, ypos, breite * 13, breite);
+
     //rect(xpos, ypos, hoehe *10, hoehe);
 
     /*strokeWeight(hoehe * breite / 2);
