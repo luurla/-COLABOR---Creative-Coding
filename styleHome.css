@@ -1,0 +1,55 @@
+a:link,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(4, 0, 255);
+}
+
+
+
+body {
+  font-family: "Jost", sans-serif;
+  background-color: rgb(179, 177, 181);
+  position: relative;
+  text-align: justify;
+  overflow-x: hidden;
+}
+
+/* ---------------------------------- */
+.NAV{
+  width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Nav1-2,
+.Nav3-4 {
+  font-size: 3rem;
+  width: 97vw;
+  height: 10%;
+  z-index: 2;
+
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 1%;
+}
+
+.Nav1-2 {
+  top: 0;
+}
+
+.Nav3-4 {
+  bottom: 0;
+}
+
+/* ---------------------------------- */
