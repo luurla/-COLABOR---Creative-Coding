@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Sprint3/style-Sprint3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+
+    <title>Perla Hoyos : Sprint 3</title>
+</head>
+
+<body>
+    <div class="Nav1-2">
+        <div class="ButtonNavSprint1">
+            <a href="/Sprint1/index-sprint1.html">
+                1
+            </a>
+        </div>
+        <div class="ButtonNavSprint2">
+            <a href="/Sprint2/index-sprint2.html">
+                2
+            </a>
+        </div>
+    </div>
+
+    <div class="Sprint1Titel">
+        Sprint 3
+    </div>
+
+    <div class="Sprint3Background" id="Sprint3Background">
+
+    </div>
+
+    <div class="Sprint3Teil2">
+        <div class="Sprint3Teil2Text1">
+            <p>
+                In diesem Sprint arbeiteten wir mit Sound. Das Interessante daran war, dass Sound vieles sein kann: ein
+                Geräusch, ein Lied, eine Melodie, eine Tonaufnahme – im Grunde alles, was mit Schallwellen zu tun hat.
+                Ich fand diesen Sprint sehr interessant, weil er zwei Welten kombiniert. Sound ist eine Kunst für sich,
+                unabhängig davon, ob es sich um Musik oder nur um Geräusche handelt. Und Code ist das perfekte Werkzeug,
+                um alles visuell zu erzeugen und verschiedene Disziplinen zu verknüpfen. Der Input zu VCV Rack öffnete
+                mir eine neue Tür, um meinen Glitches einen Ton zu geben, oder besser gesagt, Noises zu implementieren.
+                Sehr experimentell, abstrakt, aber inspirierend. Und vor allem ist das Programm einfacher zu bedienen,
+                als es aussieht.
+            </p>
+        </div>
+
+        <div class="Sprint3Teil1Video">
+            <video width="100%" height="100%" autoplay muted loop controls>
+                <source src="/Sprint3/assets/3dGlitch.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="Sprint3Teil2Text2">
+            <p>
+                In unserer Gruppe waren Valerie, Fiona und ich. Wir fühlten uns von VCV inspiriert und wollten damit
+                arbeiten. Das Konzept bestand darin, Alltagsgeräusche mit VCV zu synthetisieren und diese später mit
+                Hydra zu kombinieren, um visuelle Inputs zu erzeugen. Ich nahm Geräusche von einer Zugfahrt, einer
+                Kaffeemaschine und beim Zähneputzen auf. Den Ton zu synthetisieren und im p5.js einzubinden, war
+                einfach. Die Herausforderung kam, als wir den Hydra-Code manipulieren wollten. Hydra ist ein
+                Live-Code-fähiger Videosynthesizer und hat eine etwas andere Syntax als das normale p5.js. Bis zu diesem
+                Zeitpunkt wussten wir nicht genau, was Hydra war oder welche Funktionen es bietet. Ich experimentierte
+                und versuchte, mit den Geräuschen Glitches zu kreieren.
+            </p>
+        </div>
+    </div>
+
+    <div class="Sprint3Teil3">
+        <div class="Sprint3Teil3Video1">
+            <video width="100%" height="100%" autoplay loop controls>
+                <source src="/Sprint3/assets/glitchHydra1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="Sprint3Teil3Text">
+            <p>
+                Uns war bewusst, dass unser Thema sehr experimentell und visuell ausgerichtet war und keine grosse Tiefe
+                hatte. Wir wollten schliesslich nur die Visuals mit dem Ton manipulieren. Das Wertvollste, das ich
+                persönlich in diesem Sprint gelernt habe, war das Erzeugen und Synthesieren von Ton. Ich kreiere privat
+                durch Code und Video immer wieder Glitches, und dank dieses Inputs kann ich sie jetzt vertonen. Ich habe
+                mir noch vorgenommen, den Hydra-Code besser zu verstehen.
+            </p>
+        </div>
+
+        <div class="Sprint3Teil3Video2">
+            <img src="/Sprint3/assets/VCV.png" alt="">
+        </div>
+    </div>
+
+    <div class="Sprint3Teil4">
+        <div class="Sprint3Teil4Titel">
+            The Code
+        </div>
+        <a class="vcvbuttonspace " href="/Sprint3/assets/fun2.vcv" download="VCV-Fun.vcv">
+            <button class="vcvbutton" role="button">VCV file</button>
+        </a>
+
+        <div class="Sprint3Teil4Links">
+
+            <div class="Sprin3HydraKaffe">
+                <p class="Sprint3HydraTitel"> Kaffee </p>
+                <p class="Sprint3HydraUntertitel"> Audio Original</p>
+                <div class="HydraAudio">
+                    <audio  controls preload="auto">
+                        <source src="/Sprint3/assets/Sounds/Kaffe.wav" type="audio/wav">
+                        </source>
+                    </audio>
+                    <a href="/Sprint3/assets/Sounds/Kaffe.wav" download="OriginKaffee.wav">Download</a>
+                </div>
+
+                <p class="Sprint3HydraUntertitel"> Audio Synthetisiert</p>
+
+                <div class="HydraAudio">
+                    <audio controls preload="auto">
+                        <source src="/Sprint3/assets/Sounds/KaffeSynth.wav" type="audio/wav">
+                        </source>
+                    </audio>
+                    <a href="/Sprint3/assets/Sounds/KaffeSynth.wav" download="SynthKaffee.wav">Download
+                        </a>
+                </div>
+
+                <p class="Sprint3HydraUntertitel"> Visuals Kaffee</p>
+
+                <video class="Visuals" width="100%" autoplay muted loop controls>
+                    <source src="/Sprint3/assets/VisualsKaffee.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <a href="/Sprint3/hydra1/index.html">
+                    <button class="Teil4Button-Variante1" role="button">Code - Hydra 1</button>
+                </a>
+            </div>
+
+            <div class="Sprin3HydraZug">
+                <p class="Sprint3HydraTitel"> Zug </p>
+
+                <p class="Sprint3HydraUntertitel"> Audio Original</p>
+                <div class="HydraAudio">
+                    <audio controls preload="auto">
+                        <source src="/Sprint3/assets/Sounds/Zug.wav" type="audio/wav">
+                        </source>
+                    </audio>
+                    <a href="/Sprint3/assets/Sounds/Zug.wav" download="OriginZug.wav">Download</a>
+                </div>
+
+                <p class="Sprint3HydraUntertitel"> Audio Synthetisiert</p>
+
+                <div class="HydraAudio">
+                    <audio controls preload="auto">
+                        <source src="/Sprint3/assets/Sounds/ZugSynth.wav" type="audio/wav">
+                        </source>
+                    </audio>
+                    <a href="/Sprint3/assets/Sounds/ZugSynth.wav" download="SynthZug.wav">Download
+                       </a>
+                </div>
+
+                <p class="Sprint3HydraUntertitel"> Visuals Zug</p>
+                <video class="Visuals" width="100%" autoplay muted loop controls>
+                    <source src="/Sprint3/assets/VisualsZug.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <a href="/Sprint3/hydra2/index.html">
+                    <button class="Teil4Button-Variante2" role="button"> Code - Hydra 2</button>
+                </a>
+            </div>
+
+            <div class="Sprin3HydraZahn">
+                <p class="Sprint3HydraTitel"> Zähneputzen </p>
+                <p class="Sprint3HydraUntertitel"> Audio Original</p>
+                <div class="HydraAudio">
+                    <audio controls preload="auto">
+                        <source src="/Sprint3/assets/Sounds/Zahn.wav" type="audio/wav">
+                        </source>
+                    </audio>
+                    <a href="/Sprint3/assets/Sounds/Zahn.wav" download="OriginZahn.wav">Download</a>
+                </div>
+
+                <p class="Sprint3HydraUntertitel"> Audio Synthetisiert</p>
+
+                <div class="HydraAudio">
+                    <audio controls preload="auto">
+                        <source src="/Sprint3/assets/Sounds/zahnSynth.wav" type="audio/wav">
+                        </source>
+                    </audio>
+                    <a href="/Sprint3/assets/Sounds/zahnSynth.wav" download="SynthZahn.wav">Download</a>
+                </div>
+
+                <p class="Sprint3HydraKaffeUntertitel"> Visuals Zähneputzen</p>
+                <video class="Visuals" width="100%" autoplay muted loop controls>
+                    <source src="/Sprint3/assets/VisualsZahn.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <a href="/Sprint3/hydra3/index.html">
+                    <button class="Teil4Button-Variante3" role="button">Code - Hydra 3</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Nav3-4">
+        <div class="ButtonNavSprint3">
+            <a href="/Sprint3/index-sprint3.html">
+                3
+            </a>
+        </div>
+        <div class="NavName">
+            Perla Hoyos
+        </div>
+
+        <div class="ButtonNavSprint4">
+            <a href="/Sprint4/index-sprint4.html">
+                4
+            </a>
+        </div>
+    </div>
+
+</body>
+<script src="/Sprint3/audioMidi-3D/sketch.js"></script>
+
+</html>
