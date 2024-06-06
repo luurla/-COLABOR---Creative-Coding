@@ -1,5 +1,5 @@
 function setup() {
- var myCanvas = createCanvas(windowWidth, windowHeight);
+  var myCanvas = createCanvas(windowWidth, windowHeight);
   //myCanvas.parent('Sprint1Teil2');
 
   //windowResized()
@@ -25,9 +25,9 @@ function draw() {
     let xpos = xreihe * abstandX;
     let ypos = yreihe * abstandY;
  
-    let strickdicke = (sin(i / 20 + frameCount/20) + 1) * 4;
-   //let strickdicke = noise(sin(i / 20 + frameCount/80) + 1) * 4;
-   // let strickdicke = sin(noise((i / 40 + frameCount/-80) + 4) + noise((i / 40 + frameCount/80)+1)) * 6;
+    //let strickdicke = (sin(i / 20 + frameCount/20) + 1) * 4;
+   let strickdicke = noise(sin(i / 20 + frameCount/80) + 1) * 4;
+   //let strickdicke = sin(noise((i / 40 + frameCount/-80) + 4) + noise((i / 40 + frameCount/80)+1)) * 6;
     //console.log(strickdicke);
 
     if (strickdicke < 4) {

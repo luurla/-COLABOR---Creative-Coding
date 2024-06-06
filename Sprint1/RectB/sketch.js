@@ -4,7 +4,10 @@ let colorA, colorB;
 let colorC;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  let background = createCanvas(windowWidth, windowHeight+100);
+  background.parent('Sprint1Background');
+
+ // windowResized()
 
   colorA = color(102, 150, 255, 110);
   colorB = color(255, 17, 56, 110);
@@ -12,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(179, 177, 181);
   noStroke();
 
 
@@ -35,7 +38,7 @@ function draw() {
     let ypos = yreihe * abstandY;
 
 
-    let breite = sin(noise((i / 40 + frameCount / -180) + 1) - noise((i / 40 + frameCount / 500) + 1)) * 7;
+    let breite = sin(noise((i / 40 + frameCount / -80) + 1) - noise((i / 40 + frameCount / 50) + 1)) * 7;
     let hoehe = noise((breite * 2 + frameCount / 200) + 1) * 6;
 
     let mischWert = map(i, 0, -breite, -2, 1 * 2);
@@ -46,17 +49,17 @@ function draw() {
     // X rect(mischWert/2, ypos, mischWert/2,breite);
     // X rect(xpos, ypos, xpos + gridX, breite+5);
 
-    rect(xpos, ypos, 20, breite);
+    // 1 rect(xpos, ypos, 20, breite);
     // 2 rect(xpos, ypos,breite*13,sin((breite*5+ frameCount / 180)+1)*13);
     // 3 rect(xpos, ypos, hoehe *10, hoehe);
     // 4 rect(xpos+hoehe, ypos+hoehe, breite * 13, breite + hoehe);
     // 5 rect(xpos, ypos,breite*15, breite+5);
-    // B rect(xpos, ypos, breite * 13, breite);
 
+    rect(xpos, ypos, breite * 13, breite);
 
   }
+}
 
-
-
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }

@@ -25,8 +25,8 @@ function draw() {
     let xpos = xreihe * abstandX;
     let ypos = yreihe * abstandY;
 
-    // let strickdicke = noise((i / 40 + frameCount/-80) - 2) * 6 + noise((i / 40 + frameCount/80) + 0.5) * 7;
-    let strickdicke = noise((sin(i / 40) + frameCount / -90) - 2) * 9 + noise((i / 40 + sin(frameCount / 80) + 0.5)) * 7;
+    let strickdicke = noise((i / 40 + frameCount/-80) - 2) * 6 + noise((i / 40 + frameCount/80) + 0.5) * 7;
+    //let strickdicke = noise((sin(i / 40) + frameCount / -90) - 2) * 9 + noise((i / 40 + sin(frameCount / 80) + 0.5)) * 7;
 
     if (strickdicke < 5.5) {
       strickdicke = sin(strickdicke * 10);

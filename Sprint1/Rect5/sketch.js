@@ -46,11 +46,12 @@ function draw() {
     // X rect(mischWert/2, ypos, mischWert/2,breite);
     // X rect(xpos, ypos, xpos + gridX, breite+5);
 
-    rect(xpos, ypos, 20, breite);
+    // 1rect(xpos, ypos, 20, breite);
     // 2 rect(xpos, ypos,breite*13,sin((breite*5+ frameCount / 180)+1)*13);
     // 3 rect(xpos, ypos, hoehe *10, hoehe);
     // 4 rect(xpos+hoehe, ypos+hoehe, breite * 13, breite + hoehe);
-    // 5 rect(xpos, ypos,breite*15, breite+5);
+    rect(xpos, ypos, breite * 15, breite + 5);
+
     // B rect(xpos, ypos, breite * 13, breite);
 
 
